@@ -1,0 +1,135 @@
+#divPadre
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    position: relative;
+}
+
+#divTabla
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#divMateria
+{ 
+    box-shadow: 5px 10px rgba(6, 9, 192, 0.5);
+    left: 50%;
+    margin-top: -20%;
+    margin-left: -12.5%;
+    width: 25%;
+    min-width: 150px;
+    height: 40%;
+    min-height: 250px;
+    background-color: #9bd1f5; 
+    z-index: 2;
+    position: fixed;
+    border:1px solid #033d64;
+    border-radius: 1rem;
+    padding-left: 1%;
+}
+
+#divMateria input
+{
+    border:1px solid #033d64;
+}
+
+
+#divMateria input[type="text"]
+{
+    width: 90%;
+}
+
+
+#tabla
+{
+    width: 100%;
+    height: 100%;
+    background-color: #9bd1f5;
+    border:1px solid #033d64;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+}
+
+#tabla th,#tabla td
+{
+    border: 1px solid #1d5d88;
+    padding: 8px;
+    
+}
+
+#tabla tr:nth-child(even)
+{
+    background-color: #cbe5f7;
+}
+
+#tabla tr:hover 
+{
+    background-color: #63a7d4;
+}
+
+#tabla th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #309fe9;
+    color: white;
+}
+
+#divModalBG
+{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(37, 85, 117, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.spinner 
+{
+  position: absolute;
+  z-index: 3;
+  opacity: 50%;
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #01416b; 
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin
+{
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.btn
+{
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    bottom: 1px;
+    margin-top: 2%;
+}
+
+
+#btnEliminar,#btnCerrar
+{
+    float: left;
+    margin-left: -2%;
+    background-color: lightcoral;
+}
+
+#btnModificar
+{
+    background-color: darkseagreen;
+    float: right;
+    margin-right: 5%;
+}

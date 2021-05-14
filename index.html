@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial: JRodicio</title> 
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/pparcial.js"></script>
+</head>
+<body>
+    <div id="divPadre">
+        <div id="divModalBG" hidden></div>
+        <div id="divSpinner" class="spinner" hidden></div>
+        <div id="divTabla">
+            <table id="tabla">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha final</th>
+                    <th>Turno</th>
+                </tr>
+            </table>
+        </div>
+      
+        <div id="divMateria" hidden>
+            <input type="button" value="X" id="btnCerrar" class="btn">
+            <br><br>
+            <label for="txtNombre">Nombre</label>
+            <br>
+            <input type="text" name="txtNombre" id="txtNombre">
+            <br>
+            <label for="intCuatrimestre">Cuatrimestre</label>
+            <br>
+            <input type="number" name="intCuatrimestre" id="intCuatrimestre" readonly>
+            <br>
+            <label for="fecFecha">Fecha final</label>
+            <br>
+            <input type="date" name="fecFecha" id="fecFecha">
+            <br>
+            <label for="rdoSexo">Turno</label>
+            <br>
+            <input type="radio" name="turno" id="optManana" value="Mañana">
+            <label for="turno">Mañana</label>
+            <br>
+            <input type="radio" name="turno" id="optNoche" value="Noche">
+            <label for="turno">Noche</label>
+            <br>
+            <input type="button" value="Eliminar" id="btnEliminar" class="btn">
+            <input type="button" value="Modificar" id="btnModificar" class="btn">
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
