@@ -98,7 +98,7 @@ function registrarFila(e)
     var id=fila.childNodes[4].childNodes[0].nodeValue;
 
     $("txtNombre").value=nombre;
-    $("intCuatrimestre").value=cuatrimestre;
+    $("selCuatrimestre").value=cuatrimestre;
     $("fecFecha").value = formatDate(fechaFinal,"US");
     $("optManana").checked = (turno == "Mañana");
     $("optNoche").checked = (turno == "Noche");
@@ -158,17 +158,17 @@ function registrarFila(e)
         if(flagNombre && flagFecha && flagTurno)
         {
             var nombreInput= $("txtNombre").value;
-            var cuatrimestreInput= $("intCuatrimestre").value;
+            var cuatrimestreInput= $("selCuatrimestre").value;
             var turnoInput="Mañana";
 
-            if($("optNoche").cheked)
+            if($("optNoche").checked)
             {
                 turnoInput="Noche";
             }
 
             var jsonMateria={"id":id,"nombre":nombreInput,"cuatrimestre":cuatrimestreInput,"fechaFinal":formatDate(fechaInput),"turno":turnoInput}
 
-
+            console.log(jsonMateria);
             var peticion=new XMLHttpRequest();
             peticion.open("POST","http://localhost:3000/editar");
             peticion.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -187,7 +187,7 @@ function registrarFila(e)
                     fila.childNodes[0].childNodes[0].nodeValue=nombreInput;
                     fila.childNodes[1].childNodes[0].nodeValue=cuatrimestreInput;
                     fila.childNodes[2].childNodes[0].nodeValue=formatDate(fechaInput);
-                    fila.childNodes[3].childNodes[0].nodeValue=turno;
+                    fila.childNodes[3].childNodes[0].nodeValue=turnoInput;
                 }
             }
         }

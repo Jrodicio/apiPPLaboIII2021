@@ -34,22 +34,15 @@
     padding-left: 1%;
 }
 
-#divMateria input
+#divMateria input, #divMateria select
 {
     border:1px solid #033d64;
 }
-
 
 #divMateria input[type="text"]
 {
     width: 90%;
 }
-
-#divMateria input[type="number"]
-{
-    width: 10%;
-}
-
 
 #tabla
 {
