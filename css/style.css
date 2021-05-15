@@ -45,6 +45,11 @@
     width: 90%;
 }
 
+#divMateria input[type="number"]
+{
+    width: 10%;
+}
+
 
 #tabla
 {
